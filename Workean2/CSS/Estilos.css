@@ -38,3 +38,24 @@ body{
     font-size: 1.2rem;
     font-style: italic;
   }
+
+  /* Estilo para los botones */
+  .btn {
+    background-color: rgb(75, 221, 141); /* morado */
+    color: #fff;
+    border: none;
+  }
+
+  /* Estilo para el formulario de boostrap */
+
+  .card {
+    border-radius: 12px;
+  }
+  
+  .card h4 {
+    color: #007bff; 
+  }
+  
+
+
+  

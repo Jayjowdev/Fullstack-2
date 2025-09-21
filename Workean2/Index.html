@@ -121,18 +121,52 @@
             </div>
         </div>
         
+        <!-- Formulario -->
+        <section class="container my-5">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <div class="card shadow-sm p-4">
+                  <h4 class="text-center mb-3">📫 Suscríbete a noticias de trabajo</h4>
+                  <p class="text-center text-muted">Recibe ofertas y consejos directamente en tu correo</p>
+          
+                  <form id="formSuscripcion">
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                    </div>
+          
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Correo electrónico</label>
+                      <input type="email" class="form-control" id="email" placeholder="ejemplo@email.com" required>
+                    </div>
+          
+                    <div class="d-grid">
+                      <button type="submit" class="btn btn-primary">Suscribirme</button>
+                    </div>
+                  </form>
+          
+                  <!-- Mensaje de alerta -->
+                  <div id="mensaje" class="alert mt-3 d-none"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
 
         <footer class="bg-white text-dark py-4 border-top mt-5">
             <div class="container text-center">
-              <p class="mb-1">&copy; 2025 Workean2 . Todos los derechos reservados.</p>
+              <p class="mb-1">&copy; 2025 Workean2 . © Todos los derechos reservados.</p>
               <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" class="text-dark text-decoration-none">Inicio</a></li>
+                <li class="list-inline-item"><a href="#" class="text-dark text-decoration-none">Seguridad y privacidad</a></li>
                 <li class="list-inline-item"><a href="login/contacto.html" class="text-dark text-decoration-none">Contacto</a></li>
-                <li class="list-inline-item"><a href="#" class="text-dark text-decoration-none">Términos</a></li>
+                <li class="list-inline-item"><a href="#" class="text-dark text-decoration-none">Términos y condiciones</a></li>
               </ul>
             </div>
           </footer>
 
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
