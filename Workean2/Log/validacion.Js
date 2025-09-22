@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (usuario.value === "admin" && password.value === "1234") {
          
           // redirigir a otra página
-          window.location.href = "bienvenido.html";
+          window.location.href = "../logeado.html";
         } else {
           mostrarError("password", "Usuario o contraseña incorrectos");
         }
