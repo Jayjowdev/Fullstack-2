@@ -40,3 +40,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }  
   
   });
+
+function finalizarCompra() {
+  // Mostrar alerta
+  alert(" ¡Logeado con exito! Ahora serás redirigido...");
+
+  // Redirigir a otra página (ej: salida.html)
+  window.location.href = "../logeado.html";
+}

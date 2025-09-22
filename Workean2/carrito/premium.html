@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Suscripciones Premium</title>
+  <link rel="stylesheet" href="../Log/Estilos.css">
+</head>
+<body>
+  <main>
+    <h2>Elige tu plan Premium</h2>
+
+    <div class="planes">
+      <div class="plan">
+        <h3>Básico</h3>
+        <p>$5.990 / mes</p>
+        <button class="agregar" data-plan="Básico" data-precio="5990">Agregar al carrito</button>
+      </div>
+
+      <div class="plan">
+        <h3>Estándar</h3>
+        <p>$9.990 / mes</p>
+        <button class="agregar" data-plan="Estándar" data-precio="9990">Agregar al carrito</button>
+      </div>
+
+      <div class="plan">
+        <h3>Premium</h3>
+        <p>$14.990 / mes</p>
+        <button class="agregar" data-plan="Premium" data-precio="14990">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <section class="carrito">
+      <h3> Carrito</h3>
+      <ul id="lista-carrito"></ul>
+      <p><strong>Total:</strong> $<span id="total">0</span></p>
+      <button id="finalizar" onclick="finalizarCompra()">Finalizar compra</button>
+    </section>
+  </main>
+
+  <script src="validacionesP.js"></script>
+</body>
+</html>

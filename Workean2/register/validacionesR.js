@@ -47,10 +47,10 @@ document.addEventListener('DOMContentLoaded', function () {
       valido = false;
     }
 
-    // 👉 Solo redirige si todo es válido
+    //  Solo redirige si todo es válido
     if (valido) {
       alert("Usuario Resgistrado.");
-      window.location.href = "pagina_principal.html"; // ⬅️ aquí pones tu página destino
+      window.location.href = "pagina_principal.html"; //  aquí pones tu página destino
     }
   });
 
@@ -59,3 +59,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (elemento) elemento.innerHTML = mensaje;
   }
 });
+
+function finalizarCompra() {
+  // Mostrar alerta
+  alert(" ¡Registrado con exito! Ahora serás redirigido...");
+
+ 
+  window.location.href = "../logeado.html";
+}
