@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Validar nombre
       if (nombre.length < 2) {
         mensaje.className = "alert alert-danger mt-3";
-        mensaje.textContent = "⚠️ Ingresa un nombre válido.";
+        mensaje.textContent = " Ingresa un nombre válido.";
         mensaje.classList.remove("d-none");
         return;
       }
@@ -20,14 +20,14 @@ document.addEventListener("DOMContentLoaded", function () {
       let regexEmail = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
       if (!regexEmail.test(email)) {
         mensaje.className = "alert alert-danger mt-3";
-        mensaje.textContent = "⚠️ Ingresa un correo válido.";
+        mensaje.textContent = " Ingresa un correo válido.";
         mensaje.classList.remove("d-none");
         return;
       }
   
       // Si pasa la validación
       mensaje.className = "alert alert-success mt-3";
-      mensaje.textContent = "✅ ¡Gracias por suscribirte!";
+      mensaje.textContent = " ¡Gracias por suscribirte!";
       mensaje.classList.remove("d-none");
   
       // Opcional: resetear formulario
