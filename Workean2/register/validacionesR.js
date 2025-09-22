@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
       valido = false;
     }
 
-    if (!nombreUsuario.value.trim()) {
+    if (!nombreUsuario.value.trim()) {  
       mostrarError("usuarioR", "Por favor ingresa un nombre de usuario");
       valido = false;
     }
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
     //  Solo redirige si todo es válido
     if (valido) {
       alert("Usuario Resgistrado.");
-      window.location.href = "pagina_principal.html"; //  aquí pones tu página destino
+      window.location.href = "../logeado.html"; //  aquí pones tu página destino
     }
   });
 
@@ -67,3 +67,5 @@ function finalizarCompra() {
  
   window.location.href = "../logeado.html";
 }
+
+
