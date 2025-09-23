@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f2f7fc;
+    background: linear-gradient(135deg,  rgb(77, 238, 149), #1ac8ce);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,3 +68,34 @@ body {
     margin-bottom: 10px;
     min-height: 14px; /* espacio reservado */
   }
+
+/* Estilo para la compra de membresía */
+.planes{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.plan{
+  border: 1px #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  width: 200px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.carrito{
+  position: absolute;
+  bottom: 300px;
+  right: 500px;
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  width: 300px;
+}
+  

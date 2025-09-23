@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const plan = boton.getAttribute("data-plan");
       const precio = parseInt(boton.getAttribute("data-precio"));
 
-      carrito.push({ plan, precio });
+      carrito = [{ plan, precio }];
       renderCarrito();
     });
   });
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
       // Botón eliminar
       const btnEliminar = document.createElement("button");
-      btnEliminar.textContent = "Esta vacio";
+      btnEliminar.textContent = "Eliminar";
       btnEliminar.style.marginLeft = "10px";
       btnEliminar.addEventListener("click", () => {
         carrito.splice(index, 1);
@@ -58,10 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function finalizarCompra() {
-  // Mostrar alerta
   alert("✅ ¡Gracias por tu compra! Ahora serás redirigido...");
 
-  // Redirigir a otra página (ej: salida.html)
   window.location.href = "../logeadoP.html";
 }
 

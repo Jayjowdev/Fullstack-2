@@ -15,41 +15,41 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll(".mensajeError").forEach(e => e.innerHTML = "");
 
     if (!nombreCompleto.value.trim()) {
-      mostrarError("nombreR", "Por favor ingresa tu nombre");
+      mostrarError("nombre", "Por favor ingresa tu nombre");
       valido = false;
     }
 
     if (!correoElectronico.value.trim()) {
-      mostrarError("correoR", "Por favor ingresa tu correo electrónico.");
+      mostrarError("correo", "Por favor ingresa tu correo electrónico.");
       valido = false;
     }
 
     if (!nombreUsuario.value.trim()) {  
-      mostrarError("usuarioR", "Por favor ingresa un nombre de usuario");
+      mostrarError("usuario", "Por favor ingresa un nombre de usuario");
       valido = false;
     }
 
     if (!contraseña.value.trim()) {
-      mostrarError("contrasenaR", "La contraseña no puede estar vacía");
+      mostrarError("contrasena", "La contraseña no puede estar vacía");
       valido = false;
     } else if (contraseña.value.length < 8) {
-      mostrarError("contrasenaR", "La contraseña debe tener mínimo 8 caracteres");
+      mostrarError("contrasena", "La contraseña debe tener mínimo 8 caracteres");
       valido = false;
     }
 
     if (concontra.value !== contraseña.value) {
-      mostrarError("contrasenaR2", "Las contraseñas no coinciden");
+      mostrarError("contrasena", "Las contraseñas no coinciden");
       valido = false;
     }
 
     if (telefono.value.trim() && !/^\d{8,12}$/.test(telefono.value)) {
-      mostrarError("telefonoR", "El teléfono debe tener entre 8 y 12 dígitos");
+      mostrarError("telefono", "El teléfono debe tener entre 8 y 12 dígitos");
       valido = false;
     }
 
     //  Solo redirige si todo es válido
     if (valido) {
-      alert("Usuario Resgistrado.");
+      alert("Usuario Registrado.");
       window.location.href = "../logeado.html"; //  aquí pones tu página destino
     }
   });
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function finalizarCompra() {
   // Mostrar alerta
-  alert(" ¡Registrado con exito! Ahora serás redirigido...");
+  alert("¡Registrado con éxito! Ahora serás redirigido...");
 
  
   window.location.href = "../logeado.html";
