@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f2f7fc;
+    background: linear-gradient(135deg,  rgb(77, 238, 149), #1ac8ce);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,10 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     width: 100%;
     max-width: 320px;
+    
   }
+
+  
   
   h2 {
     text-align: center;
@@ -68,3 +71,43 @@ body {
     margin-bottom: 10px;
     min-height: 14px; /* espacio reservado */
   }
+
+/* Estilo para la compra de membresía */
+.planes{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.plan{
+  border: 1px #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  width: 200px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.carrito{
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  width: 300px;
+}
+  
+a {
+  text-align: center; /* Centra el texto del enlace */
+  display: inline-block; /* Cambia a display inline-block para que se pueda alinear */
+  margin-top: 20px; /* Añade espacio superior, si lo necesitas */
+  text-decoration: none; /* Elimina el subrayado */
+  color: #007BFF; /* Color de texto */
+  font-weight: bold; /* Hace el texto un poco más destacable */
+}
+
+a:hover {
+  color: #0056b3; /* Color al pasar el ratón */
+}
