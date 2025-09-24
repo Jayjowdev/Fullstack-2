@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  max-width: 350px;
+}
+
+.imagen {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.descripcion {
+  margin: 15px 0;
+  color: #555;
+}
+
+.botones button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#likeBtn {
+  background: #4caf50;
+  color: white;
+}
+
+#dislikeBtn {
+  background: #f44336;
+  color: white;
+}

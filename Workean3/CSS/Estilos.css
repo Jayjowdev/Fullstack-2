@@ -1,0 +1,61 @@
+body{
+    font-family: sans-serif;
+    background-color: #373837;
+    text-align: center;
+}
+
+.mi-navbar{
+   background-color: rgb(77, 238, 149); 
+}
+
+.carousel-item img {
+  width: 100%;           /* ocupa todo el ancho */
+  height: 800px;         /* alto fijo del carrusel */
+  object-fit: cover;     /* recorta sin deformar */
+}
+
+.mi-navbar .navbar-nav .nav-link,
+.mi-navbar .navbar-brand,
+.mi-navbar .dropdown-item {
+    color: rgb(37, 37, 36) !important;
+  }
+
+.mensaje-carrera {
+    background: linear-gradient(135deg,  rgb(77, 238, 149), #1ac8ce); /* degradado azul */
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+.mensaje-carrera h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .mensaje-carrera p {
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+
+  /* Estilo para los botones */
+  .btn {
+    background-color: rgb(75, 221, 141); /* morado */
+    color: #fff;
+    border: none;
+  }
+
+  /* Estilo para el formulario de boostrap */
+
+  .card {
+    border-radius: 12px;
+  }
+  
+  .card h4 {
+    color: #007bff; 
+  }
+  
+
+
+  

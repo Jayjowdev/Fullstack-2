@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="loginForm" novalidate>
+    <h2>Iniciar Sesión</h2>
+
+    <div class="form-input usuario">
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" name="usuario">
+      <p class="mensajeError"></p>
+
+
+
+      
+    </div>
+
+    <div class="form-input password">
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password">
+      <p class="mensajeError"></p>
+    </div>
+
+    <button type="submit" onclick="finalizarCompra()">Ingresar</button>
+    <br>
+    <br>
+    <div class="form-a">
+      <a href="../register/register.html">Aquí para registrarte</a>
+    </div>
+  </form>
+
+  <script src="validacion.js"></script>
+</body>
+</html>
