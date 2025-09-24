@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function finalizarCompra() {
   // Mostrar alerta
-  alert("✅ ¡Gracias por tu compra! Ahora serás redirigido...");
+  alert(" ¡Gracias por tu compra! Ahora serás redirigido...");
 
   window.location.href = "../logeadoP.html";
 }
