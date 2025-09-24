@@ -10,25 +10,20 @@ document.addEventListener('DOMContentLoaded', function () {
   form.addEventListener('submit', function (event) {
     event.preventDefault();
     let valido = true;
-
-    // Limpio errores previos
+ 
     document.querySelectorAll(".mensajeError").forEach(e => e.innerHTML = "");
-
     if (!nombreCompleto.value.trim()) {
       mostrarError("nombreR", "Por favor ingresa tu nombre");
       valido = false;
     }
-
     if (!correoElectronico.value.trim()) {
       mostrarError("correoR", "Por favor ingresa tu correo electrónico.");
       valido = false;
     }
-
     if (!nombreUsuario.value.trim()) {  
       mostrarError("usuarioR", "Por favor ingresa un nombre de usuario");
       valido = false;
     }
-
     if (!contraseña.value.trim()) {
       mostrarError("contrasenaR", "La contraseña no puede estar vacía");
       valido = false;
@@ -36,35 +31,28 @@ document.addEventListener('DOMContentLoaded', function () {
       mostrarError("contrasenaR", "La contraseña debe tener mínimo 8 caracteres");
       valido = false;
     }
-
     if (concontra.value !== contraseña.value) {
       mostrarError("contrasenaR2", "Las contraseñas no coinciden");
       valido = false;
     }
-
     if (telefono.value.trim() && !/^\d{8,12}$/.test(telefono.value)) {
       mostrarError("telefonoR", "El teléfono debe tener entre 8 y 12 dígitos");
       valido = false;
     }
-
     //  Solo redirige si todo es válido
     if (valido) {
       alert("Usuario Resgistrado.");
       window.location.href = "../logeado.html"; //  aquí pones tu página destino
     }
   });
-
   function mostrarError(claseInput, mensaje) {
     let elemento = document.querySelector(`.${claseInput} .mensajeError`);
     if (elemento) elemento.innerHTML = mensaje;
   }
 });
-
 function finalizarCompra() {
   // Mostrar alerta
   alert(" ¡Registrado con exito! Ahora serás redirigido...");
-
- 
   window.location.href = "../logeado.html";
 }
 
